@@ -18,7 +18,8 @@ Route::get('/', function()
 
 Route::group(['namespace' => 'Api1', 'prefix' => 'api/v1'], function()
 {
-    Route::resource('places', 'PlaceController');
+    Route::get('places', ['as'=>'places', 'use'=>'PlaceController@index']);
+    Route::get('place/{id}', ['as'=>'place', 'use'=>'PlaceController@show']);
     Route::resource('categories', 'CategoryController');
     Route::resource('comments', 'CommentController');
 });
