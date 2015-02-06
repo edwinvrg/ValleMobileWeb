@@ -28,7 +28,7 @@ abstract class BaseRepo {
         if(!$with)
             return $this->model->find($id);
 
-        return $this->model->find($id)->with($with)->get();
+        return $this->model->with($with)->where('id','=', $id)->get();
     }
 
     /**
