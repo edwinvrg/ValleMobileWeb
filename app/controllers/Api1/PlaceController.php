@@ -18,7 +18,7 @@ class PlaceController extends \BaseController {
 	 */
 	public function index()
 	{
-        return \Response::json($this->placesRepo->active(['comments', 'categorys']));
+        return \Response::json($this->placesRepo->active(['comments', 'categorys', 'images']));
 	}
 
 
@@ -31,7 +31,7 @@ class PlaceController extends \BaseController {
 	 */
 	public function show($id)
 	{
-        return \Response::json($this->placesRepo->find($id, ['comments', 'categorys']));
+        return \Response::json($this->placesRepo->find($id, ['comments', 'categorys', 'images']));
 	}
 
 

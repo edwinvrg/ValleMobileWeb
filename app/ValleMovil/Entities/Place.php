@@ -14,4 +14,9 @@ class Place extends \Eloquent{
     {
         return $this->hasMany('ValleMovil\Entities\Comment');
     }
+
+    public function images()
+    {
+        return $this->hasMany('ValleMovil\Entities\Image');
+    }
 } 

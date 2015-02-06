@@ -13,9 +13,10 @@ class DatabaseSeeder extends Seeder {
 
 		//$this->call('RolesTableSeeder');
         //$this->call('UsersTableSeeder');
-        $this->call('CategorysTableSeeder');
-        $this->call('PlacesTableSeeder');
-        $this->call('CommentsTableSeeder');
+        //$this->call('CategorysTableSeeder');
+        //$this->call('PlacesTableSeeder');
+        //$this->call('CommentsTableSeeder');
+        $this->call('ImagesTableSeeder');
 	}
 
 }
