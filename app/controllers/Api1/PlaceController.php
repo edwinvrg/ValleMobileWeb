@@ -18,7 +18,6 @@ class PlaceController extends \BaseController {
 	 */
 	public function index()
 	{
-		dd('hola');
         return \Response::json($this->placesRepo->active('comments'));
 	}
 
@@ -32,7 +31,6 @@ class PlaceController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		dd($this->placesRepo->find($id, 'comments'));
         return \Response::json($this->placesRepo->find($id, 'comments'));
 	}
 
