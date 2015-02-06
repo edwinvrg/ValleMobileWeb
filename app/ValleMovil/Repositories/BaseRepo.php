@@ -55,6 +55,6 @@ abstract class BaseRepo {
 
     public function where($attr, $equal, $value)
     {
-        return $this->model->where($attr, $equal, $value);
+        return $this->model->where($attr, $equal, $value)->where('state', '=', 1)->get();
     }
 } 

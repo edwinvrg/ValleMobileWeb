@@ -20,6 +20,6 @@ class ImageController extends \BaseController {
 	 */
 	public function show($id)
 	{
-        return \Response::json($this->imageRepo->find($id));
+        return \Response::json($this->imageRepo->where('place_id', '=', $id));
 	}
 }
