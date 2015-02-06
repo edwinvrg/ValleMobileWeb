@@ -50,7 +50,7 @@ class ImagesTableSeeder extends Seeder {
 		{
             $select = rand(0, $total);
 			Image::create([
-                'url' => "$images[$select]",
+                'url' => '"'.$images[$select].'"',
                 'place_id' => $faker->numberBetween(0, 50)
 			]);
 		}
