@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'vallemovil',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'ana6chiu',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
