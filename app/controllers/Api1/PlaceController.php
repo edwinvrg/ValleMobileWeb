@@ -18,7 +18,7 @@ class PlaceController extends \BaseController {
 	 */
 	public function index()
 	{
-		dd('hola')
+		dd('hola');
         return \Response::json($this->placesRepo->active('comments'));
 	}
 
