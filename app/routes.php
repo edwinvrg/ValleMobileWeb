@@ -21,4 +21,5 @@ Route::group(['namespace' => 'Api1', 'prefix' => 'api/v1'], function()
     Route::resource('place', 'PlaceController');
     Route::resource('category', 'CategoryController');
     Route::resource('comment', 'CommentController');
+    Route::resource('image', 'ImageController');
 });
